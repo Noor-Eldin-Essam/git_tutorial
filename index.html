@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>Assigment Session-8</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index_style.css" />
+</head>
+<body>
+  <div class="container py-3">
+    <div>
+      <div class="form-group">
+          <label>productName:</label>
+          <input id="productName" onkeyup="ValiditeName(this.value)" class="form-control"/>
+      </div>
+      <div class="form-group">
+          <label>productCompany:</label>
+          <input id="productCompany" onkeyup="ValiditeCompany(this.value)" class="form-control"/>
+      </div>
+      <div class="form-group">
+          <label>productPrice:</label>
+          <input id="productPrice" onkeyup="ValiditePrice(this.value)" class="form-control"/>
+      </div>
+      <div class="form-group">
+          <label>productDesc:</label>
+          <textarea id="productDesc" class="form-control"></textarea>
+      </div>
+      <button  id="addBtn" class="btn btn-info float-right">add product</button>
+      <!-- <button  id="editBtn" class="btn btn-info float-right hide"> edit product</button> -->
+      <div class="clearfix"></div>
+    </div>
+    <input type="text" onkeyup="search(this.value)" id="search" class="form-control my-3" placeholder="Search" />
+    <table class="table">
+       <thead>
+         <th>productName</th>
+         <th>productCompany</th>
+         <th>productPrice</th>
+         <th>productDesc</th>
+       </thead>
+       <tbody id="tableBody">
+
+       </tbody>
+    </table>
+  </div> 
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
